@@ -13,7 +13,6 @@ func (v *Validations) Add(field string, message string) error {
 }
 
 func (v *Validations) AddMany(field string, msgs []string) error {
-
 	if (*v)[field] == nil {
 		(*v)[field] = []string{}
 	}
